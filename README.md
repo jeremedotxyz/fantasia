@@ -4,7 +4,7 @@
                                                                               
   ### Do what you wish. The terminal is still becoming.                       
                                                                               
-  Ghostty-grade terminal AI operator · The NeverEnding Story · AURYN token     
+  Terminal-native AI operator · The NeverEnding Story · AURYN token            
   governor · Southern Oracle reasoning · bounded context preservation         
                                                                               
 ```
@@ -13,16 +13,16 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-65cede?logo=python&logoColor=white)](https://www.python.org/)
 [![Version](https://img.shields.io/badge/version-0.1.0-89a5b3)](https://github.com/jeremedotxyz/fantasia)
 [![Runtime](https://img.shields.io/badge/runtime-standard_library-65cede)](https://github.com/jeremedotxyz/fantasia)
-[![Aesthetic](https://img.shields.io/badge/terminal-ghostty_aesthetic-daaf37)](https://ghostty.org/)
+[![Aesthetic](https://img.shields.io/badge/terminal-truecolor_aesthetic-daaf37)](https://github.com/jeremedotxyz/fantasia)
 [![Validation](https://img.shields.io/badge/validation-test_suite-eda66b)](https://github.com/jeremedotxyz/fantasia/actions)
 
 [Start here](#-quickstart) · [Architecture](docs/architecture.md) · [Lore & Specs](docs/lore-and-specs.md) · [Operator guide](docs/operator-guide.md)
 
 ![Fantasia CLI blueprint](docs/assets/social-preview.png)
 
-**Fantasia** is an interactive, terminal-native AI operator modeled after Michael Ende's *The NeverEnding Story* and styled in the high-fidelity visual aesthetic of **Ghostty**. It treats human prompts as wishes governed by **AURYN**, queries the **Southern Oracle** through multi-provider reasoning gates, and actively monitors context decay through **The Nothing** entropy gauge.
+**Fantasia** is an interactive, terminal-native AI operator modeled after Michael Ende's *The NeverEnding Story*. It treats human prompts as wishes governed by **AURYN**, queries the **Southern Oracle** through multi-provider reasoning gates, and actively monitors context decay through **The Nothing** entropy gauge.
 
-A terminal interface should not feel like an sterile web form. Ghostty taught the developer community that terminal ergonomics can be gorgeous, silky, and tactile; Michael Ende taught us that the reader is an active participant in the story. Fantasia unites both philosophies into a bounded, reproducible CLI engine.
+A terminal interface should not feel like a sterile web form. Modern terminal ergonomics can be tactile, gorgeous, and responsive; Michael Ende taught us that the reader is an active participant in the story. Fantasia unites both philosophies into a bounded, reproducible CLI engine.
 
 > **DO WHAT THOU WILT.** In the book, every wish granted in Fantasia costs a human memory. Fantasia enforces this discipline in code: autonomous agents cannot drift into hallucinations without explicit human memory anchors.
 
@@ -37,7 +37,7 @@ A terminal interface should not feel like an sterile web form. Ghostty taught th
 | **The Nothing** | *Das Nichts* | Context degradation & hallucination entropy monitor | 4-tier threat assessment, ASCII terminal radar |
 | **Atreyu Scout** | *The Plains Hunter* | Autonomous filesystem reconnaissance and discovery | Structured artifact reports, dependency maps |
 | **Falkor Recovery** | *The Luckdragon* | Optimistic retry loops, escape handlers | Stalled operation recovery, self-healing retries |
-| **Ghostty UI** | *The Ivory Tower* | 24-bit TrueColor frames, macOS window controls, tabs | Silk-smooth rendering, zero runtime dependencies |
+| **Terminal UI** | *The Ivory Tower* | 24-bit TrueColor frames, macOS window controls, tabs | Silk-smooth rendering, zero runtime dependencies |
 
 ---
 
@@ -50,7 +50,7 @@ Fantasia is built with **zero runtime dependencies** beyond standard Python 3.10
 git clone https://github.com/jeremedotxyz/fantasia.git
 cd fantasia
 
-# Run the Ghostty terminal demo
+# Run the terminal demo
 python3 -m fantasia.cli demo
 ```
 
@@ -89,10 +89,10 @@ fantasia/
   │     ├── __init__.py              # Package metadata (v0.1.0)
   │     ├── agent.py                 # Atreyu scout & Falkor recovery
   │     ├── auryn.py                 # AURYN medallion & wish governor
-  │     ├── cli.py                   # Argument parser & Ghostty entrypoint
+  │     ├── cli.py                   # Argument parser & CLI entrypoint
   │     ├── nothing.py               # The Nothing entropy & context monitor
   │     ├── oracle.py                # Southern Oracle multi-provider bridge
-  │     └── ui.py                    # 24-bit TrueColor Ghostty terminal renderer
+  │     └── ui.py                    # 24-bit TrueColor terminal renderer
   ├── scripts/
   │     └── generate_social_preview.py # Data-derived preview artwork generator
   ├── tests/
@@ -109,7 +109,7 @@ fantasia/
 
 - **Zero-Token Offline Guarantee**: When no API keys (`GEMINI_API_KEY`, `OPENAI_API_KEY`) are present, Fantasia activates its **Synthetic Sphinx Oracle** rather than crashing.
 - **Bounded Exploration**: Atreyu's filesystem scout is bounded to 50 active artifacts per pass with explicit path exclusion to prevent directory tree explosion.
-- **Terminal Compatibility**: The `GhosttyRenderer` supports TrueColor (24-bit ANSI) terminals (Ghostty, iTerm2, Kitty, Alacritty, WezTerm, macOS Terminal) and gracefully degrades on monochrome consoles.
+- **Terminal Compatibility**: The `TerminalRenderer` supports TrueColor (24-bit ANSI) terminals and gracefully degrades on monochrome consoles.
 
 ---
 

@@ -1,6 +1,6 @@
 # Architecture & Technical Design
 
-Fantasia is an interactive, terminal-native AI operator designed around the aesthetics of modern GPU terminals (Ghostty) and the symbolic narrative of Michael Ende's *The NeverEnding Story*.
+Fantasia is an interactive, terminal-native AI operator designed around the aesthetics of modern GPU terminals and the symbolic narrative of Michael Ende's *The NeverEnding Story*.
 
 ```
                                       ┌─────────────────────────────────┐
@@ -24,7 +24,7 @@ Fantasia is an interactive, terminal-native AI operator designed around the aest
                          │                                                         │
                          ▼                                                         ▼
          ┌───────────────────────────────┐                         ┌───────────────────────────────┐
-         │       Ghostty Renderer        │◄────────────────────────┤     Atreyu / Falkor Agent     │
+         │       Terminal Renderer       │◄────────────────────────┤     Atreyu / Falkor Agent     │
          │   24-bit TrueColor Terminal   │                         │  Reconnaissance & Recovery    │
          └───────────────────────────────┘                         └───────────────────────────────┘
 ```

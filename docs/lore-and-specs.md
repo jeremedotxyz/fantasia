@@ -19,9 +19,9 @@
 
 ---
 
-## Visual Design Specification (Ghostty Aesthetic)
+## Visual Design Specification (TrueColor Terminal Aesthetic)
 
-Fantasia adopts the visual ergonomics of **Ghostty**, the GPU-accelerated terminal emulator created by Mitchell Hashimoto:
+Fantasia adopts the visual ergonomics of modern GPU-accelerated terminal environments:
 
 - **Palette**: Deep Obsidian `#0c0e14`, Auryn Gold `#daaf37`, Sphinx Teal `#48c9b0`, and Void Magenta `#e056fd`.
 - **Framing**: Smooth Unicode box drawings (`╭─╮`, `╰─╯`), macOS traffic light controls, and padded card margins.

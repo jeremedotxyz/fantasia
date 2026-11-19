@@ -1,7 +1,7 @@
-"""Ghostty-grade ANSI & TrueColor terminal renderer for Fantasia.
+"""TrueColor terminal renderer for Fantasia.
 
 Provides crisp 24-bit RGB palette, rounded borders, AURYN dual-snake glyphs,
-pill badges, and window framing reminiscent of modern GPU terminals.
+pill badges, and window framing.
 """
 
 import sys
@@ -18,7 +18,7 @@ class Color:
     UNDERLINE = "\033[4m"
 
     # Palette
-    OBSIDIAN = (12, 14, 20)      # #0c0e14 - deep Ghostty background
+    OBSIDIAN = (12, 14, 20)      # #0c0e14 - deep obsidian background
     PANEL = (20, 24, 34)         # #141822 - terminal panel surface
     INK = (232, 236, 242)        # #e8ecf2 - crisp alabaster text
     MUTED = (120, 130, 145)      # #788291 - steel secondary
@@ -52,7 +52,7 @@ class Color:
 
 
 class Glyphs:
-    """Unicode box drawing and Fantasia / Ghostty symbolic glyphs."""
+    """Unicode box drawing and Fantasia symbolic glyphs."""
     AURYN_PAIR = "∞"
     AURYN_SNAKES = "ᚢᛟᚢ"
     DOT = "•"
@@ -75,7 +75,7 @@ class Glyphs:
     CROSS = "┼"
 
 
-class GhosttyRenderer:
+class TerminalRenderer:
     """Renders stylized terminal UI frames, headers, and status cards."""
 
     def __init__(self, stream=None):
@@ -94,7 +94,7 @@ class GhosttyRenderer:
         print(Color.paint(line, color), file=self.stream)
 
     def banner(self, active_tab: str = "Ivory Tower") -> None:
-        """Render top Ghostty window bar with macOS controls and Fantasia title."""
+        """Render top window bar with macOS controls and Fantasia title."""
         w = self.term_width
         dots = (
             Color.paint("●", Color.RED) + " " +
@@ -148,7 +148,7 @@ class GhosttyRenderer:
         print(Color.paint("  " + "─" * (w - 4), Color.BORDER), file=self.stream)
 
     def card(self, title: str, body: List[str], tag: str = "ORACLE", color=Color.ORACLE_CYAN) -> None:
-        """Render a Ghostty-styled bordered card with badge tag."""
+        """Render a bordered card with badge tag."""
         w = self.term_width
         badge = Color.paint(f"[{tag}]", color, bold=True)
         header_text = f" {badge} {Color.paint(title, Color.INK, bold=True)} "

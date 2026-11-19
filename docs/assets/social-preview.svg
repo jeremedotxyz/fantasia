@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
-<title>FANTASIA / CLI — Ghostty-grade terminal AI operator</title>
+<title>FANTASIA / CLI — Terminal-native AI operator</title>
 <desc>Modelled after The NeverEnding Story: AURYN token governor, Southern Oracle, and bounded context against The Nothing.</desc>
 <rect width="1280" height="640" fill="#0c0e14"/>
 <polyline points="30.0,30.0 30.0,610.0" fill="none" stroke="#161a26" stroke-width="0.5"/>
@@ -77,7 +77,7 @@
 <text x="152" y="142" fill="#ebf0f8" font-family="Menlo, Monaco, Consolas, monospace" font-size="36" font-weight="700">FANTASIA</text>
 <text x="338" y="140" fill="#daaf37" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" font-weight="700">/ CLI</text>
 <text x="154" y="160" fill="#f5e6aa" font-family="Menlo, Monaco, Consolas, monospace" font-size="12" font-weight="700">DO WHAT THOU WILT — THE TERMINAL IS STILL BECOMING</text>
-<text x="800" y="125" fill="#48c9b0" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700">GHOSTTY-GRADE TERMINAL AI OPERATOR</text>
+<text x="800" y="125" fill="#48c9b0" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700">TERMINAL-NATIVE AI OPERATOR</text>
 <text x="800" y="145" fill="#7d8a9c" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="400">MICHAEL ENDE LORE · BOUNDED CONTEXT ENGINE</text>
 <polyline points="56.0,182.0 1224.0,182.0" fill="none" stroke="#2e3648" stroke-width="0.8"/>
 <rect x="56" y="204" width="660" height="360" rx="6" fill="#0e1118" stroke="#2e3648" stroke-width="1.0"/>

@@ -1,7 +1,7 @@
-"""Render Ghostty-grade social preview share artwork for Fantasia CLI.
+"""Render terminal-native social preview share artwork for Fantasia CLI.
 
 Generates 1280 x 640 PNG and vector SVG matching the aesthetic of
-The NeverEnding Story and modern GPU terminals (Ghostty).
+The NeverEnding Story and modern GPU terminals.
 
 Run:
     /tmp/fantasia-env/bin/python3 scripts/generate_social_preview.py
@@ -39,7 +39,7 @@ draw = ImageDraw.Draw(image)
 
 svg = [
     f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
-    '<title>FANTASIA / CLI — Ghostty-grade terminal AI operator</title>',
+    '<title>FANTASIA / CLI — Terminal-native AI operator</title>',
     '<desc>Modelled after The NeverEnding Story: AURYN token governor, Southern Oracle, and bounded context against The Nothing.</desc>',
     f'<rect width="{W}" height="{H}" fill="#0c0e14"/>',
 ]
@@ -122,7 +122,7 @@ for gx in range(30, W - 29, 32):
 for gy in range(30, H - 29, 32):
     line([(30, gy), (W - 30, gy)], (22, 26, 38), 0.5)
 
-# Outer Ghostty Window Frame
+# Outer Window Frame
 rect(36, 36, W - 72, H - 72, BORDER, PANEL_BG, 1.2, rx=8)
 
 # Header Bar with window controls
@@ -144,7 +144,7 @@ draw_auryn_ouroboros(96, 126, 26)
 text(152, 106, "FANTASIA", 36, INK, bold=True)
 text(338, 118, "/ CLI", 22, GOLD, bold=True)
 text(154, 148, "DO WHAT THOU WILT — THE TERMINAL IS STILL BECOMING", 12, GOLD_LIGHT, bold=True)
-text(W - 480, 114, "GHOSTTY-GRADE TERMINAL AI OPERATOR", 11, CYAN, bold=True)
+text(W - 480, 114, "TERMINAL-NATIVE AI OPERATOR", 11, CYAN, bold=True)
 text(W - 480, 134, "MICHAEL ENDE LORE · BOUNDED CONTEXT ENGINE", 11, MUTED)
 
 line([(56, 182), (W - 56, 182)], BORDER, 0.8)

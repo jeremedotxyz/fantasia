@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fantasia-cli"
 version = "0.1.0"
-description = "A Ghostty-grade terminal AI operator modeled after The NeverEnding Story"
+description = "A terminal-native AI operator modeled after The NeverEnding Story"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [

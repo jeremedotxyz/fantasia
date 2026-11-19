@@ -1,4 +1,4 @@
-"""FANTASIA — A Ghostty-grade terminal AI operator modeled after The NeverEnding Story.
+"""FANTASIA — A terminal-native AI operator modeled after The NeverEnding Story.
 
 DO WHAT THOU WILT. Keep the memory before The Nothing claims the rest.
 """
@@ -9,13 +9,13 @@ __author__ = "jer <jeremedotxyz@gmail.com>"
 from fantasia.auryn import Auryn, Wish
 from fantasia.nothing import NothingGauge
 from fantasia.oracle import SouthernOracle
-from fantasia.ui import GhosttyRenderer
+from fantasia.ui import TerminalRenderer
 
 __all__ = [
     "Auryn",
     "Wish",
     "NothingGauge",
     "SouthernOracle",
-    "GhosttyRenderer",
+    "TerminalRenderer",
     "__version__",
 ]

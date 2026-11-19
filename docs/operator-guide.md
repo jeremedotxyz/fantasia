@@ -13,7 +13,7 @@ Run Fantasia without any dependencies beyond Python 3.10+:
 git clone https://github.com/jeremedotxyz/fantasia.git
 cd fantasia
 
-# Run the Ghostty terminal demo
+# Run the terminal demo
 python3 -m fantasia.cli demo
 ```
 
@@ -29,7 +29,7 @@ fantasia demo
 ## 2. Command Reference
 
 ### `fantasia demo`
-Renders the full Ghostty terminal interface showcase with active tabs, AURYN talisman art, Southern Oracle output, and The Nothing radar.
+Renders the full terminal interface showcase with active tabs, AURYN talisman art, Southern Oracle output, and The Nothing radar.
 
 ### `fantasia wish "<prompt>"`
 Submits a prompt as an AURYN-grounded wish:

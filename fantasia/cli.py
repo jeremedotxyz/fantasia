@@ -1,6 +1,6 @@
 """Command-line interface for Fantasia.
 
-A Ghostty-grade terminal AI operator modeled after The NeverEnding Story.
+A terminal-native AI operator modeled after The NeverEnding Story.
 """
 
 import argparse
@@ -10,13 +10,13 @@ from fantasia import __version__
 from fantasia.auryn import Auryn
 from fantasia.nothing import NothingGauge
 from fantasia.oracle import SouthernOracle
-from fantasia.ui import GhosttyRenderer, Color, Glyphs
+from fantasia.ui import TerminalRenderer, Color, Glyphs
 from fantasia.agent import AtreyuAgent
 
 
 def cmd_demo(args):
-    """Run an interactive Ghostty-styled showcase of Fantasia."""
-    r = GhosttyRenderer()
+    """Run an interactive showcase of Fantasia."""
+    r = TerminalRenderer()
     r.banner(active_tab="Ivory Tower")
     r.auryn_header()
 
@@ -25,7 +25,7 @@ def cmd_demo(args):
         body=[
             "DO WHAT THOU WILT — The ouroboros twins guard your intent.",
             "Each wish shapes Fantasia while anchoring human memory against the void.",
-            "Ghostty TrueColor terminal emulation active: 24-bit RGB palette.",
+            "TrueColor terminal emulation active: 24-bit RGB palette.",
         ],
         tag="STATE",
         color=Color.GOLD,
@@ -65,7 +65,7 @@ def cmd_demo(args):
 
 def cmd_wish(args):
     """Grant a human wish through the AURYN talisman."""
-    r = GhosttyRenderer()
+    r = TerminalRenderer()
     auryn = Auryn()
     wish = auryn.grant_wish(args.prompt)
 
@@ -98,7 +98,7 @@ def cmd_wish(args):
 
 def cmd_oracle(args):
     """Directly consult the Southern Oracle."""
-    r = GhosttyRenderer()
+    r = TerminalRenderer()
     oracle = SouthernOracle()
     r.banner(active_tab="Oracle Gate")
     
@@ -118,7 +118,7 @@ def cmd_oracle(args):
 
 def cmd_atreyu(args):
     """Dispatch the Atreyu agent on an autonomous scout task."""
-    r = GhosttyRenderer()
+    r = TerminalRenderer()
     r.banner(active_tab="Ivory Tower")
     agent = AtreyuAgent()
     task = " ".join(args.task)
@@ -137,7 +137,7 @@ def cmd_atreyu(args):
 
 def cmd_nothing(args):
     """Inspect The Nothing entropy gauge."""
-    r = GhosttyRenderer()
+    r = TerminalRenderer()
     r.banner(active_tab="The Void")
     gauge = NothingGauge()
     if args.tokens:
@@ -163,14 +163,14 @@ def cmd_nothing(args):
 def main():
     parser = argparse.ArgumentParser(
         prog="fantasia",
-        description="A Ghostty-grade terminal AI operator modeled after The NeverEnding Story",
+        description="A terminal-native AI operator modeled after The NeverEnding Story",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
 
     subparsers = parser.add_subparsers(dest="command")
 
     # demo
-    p_demo = subparsers.add_parser("demo", help="Render Ghostty-styled interactive showcase")
+    p_demo = subparsers.add_parser("demo", help="Render interactive showcase")
     p_demo.set_defaults(func=cmd_demo)
 
     # wish
